@@ -1,0 +1,73 @@
+.screen{
+  .browser{
+    @include padding-x(15px);
+    @extend %block-height;
+    background: $red-grad;
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .text-browser{
+      color: #fff;
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+    }
+    .img-browser{
+      height: 50%;
+      margin:0 auto;
+      margin-bottom: -1px;
+      img{
+        height: 100%;
+      }
+    }
+  }
+  .phone{
+      &::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+    width: 100%;
+    @media (max-width: $md-screen) {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    @include margin-y (30px);
+    .phone-title{
+      @include margin-y (0, 20px);
+      @media (max-width: $md-screen){
+        width:100%;
+        float: none;
+        order:-1;
+      }
+    }
+    div{
+      float: left;
+      text-align: left;
+      &.phone-img{
+        text-align: center;
+      }
+      @media (max-width: $md-screen){
+        float: none;
+        &:not(.phone-text){
+          text-align: center;
+        }
+      }
+      width: 50%;
+      @include padding-x (10px);
+        img{
+          width: 100%;
+          max-width: 200px;
+          @media (max-width: $md-screen) {
+          max-width: 50%;
+       }
+      }
+      &.phone-btn{
+        @media (max-width: $md-screen) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

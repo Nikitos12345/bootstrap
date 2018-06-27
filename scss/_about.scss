@@ -1,0 +1,196 @@
+.about-container{
+  @include padding-y(90px);
+  @media (max-width: $md-screen){
+    @include padding-y(50px);
+  }
+}
+.about-placeholder{
+  width: 100%;
+  height: 300px;
+  background-color: $sm-block;
+  @media (max-width: $md-screen) {
+    height: 225px;
+  }
+  @media (max-width: $sm-screen) {
+    height: 150px;
+  }
+}
+.about-block {
+  .about-block__header{
+    @include margin-y(40px);
+    text-align: left;
+    font-size: $body-fs*1.4;
+    padding-left: 10px;
+  }
+  .about-block__text{
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: $sm-fs;
+    font-family: Roboto-Regular;
+  }
+}
+.add{
+  padding-top: 80px;
+  @media (max-width: $md-screen){
+    padding-top: 40px;
+  }
+  background: $blue-grad;
+  .container::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+.add-block1{
+  @media (min-width: $sm-screen+1) {
+    padding-top: 80px;
+    text-align: left;
+    float: right;
+    width: 58.3%;
+    @include padding-x(20px);
+  }
+  @media (max-width: $sm-screen) {
+    text-align: center;
+    width: 100%;
+    float: none;
+    padding-bottom: 30px;
+  }
+  &__header{
+    font-size: $body-fs*1.37;
+    font-family: Roboto-Regular;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
+  &__span{
+    font-family: Roboto-medium;
+    font-size: $body-fs;
+  }
+}
+.add-block2{
+  width: 41.6%;
+  @media (max-width: $sm-screen) {
+  width: 50%;
+  }
+  float: left;
+  margin-bottom:-40px;
+  text-align: center;
+  @media (max-width: $md-screen){
+    img{
+      width: 100%;
+    }
+  }
+  @media (max-width: $sm-screen){
+    img{
+      width: 70%;
+    }
+  }
+}
+.add-block3{
+  @include padding-x(20px, 0);
+  width: 58.3%;
+  @media (max-width: $sm-screen) {
+    width: 50%;
+  }
+  text-align: left;
+  float: right;
+  &__text{
+    font-size: $sm-fs;
+    margin: 20px 0;
+  }
+}
+.reviews {
+  @include padding-y(120px, 30px);
+  @media (max-width: $md-screen){
+    @include padding-y(80px, 20px);
+  }
+}
+.reviews-text{
+  margin-bottom: 60px;
+  &__text{
+    padding: 0 15%;
+    }
+}
+.reviews-block{
+  &-elem{
+    background: $blue-grad;
+    padding: 30px 20px;
+    font-family: Roboto-Regular;
+    margin-bottom: 30px;
+    &__header{
+      font-size: $body-fs*1.36;
+      padding: 10px 0;
+    }
+    &__span{
+      font-size: $sm-fs;
+    }
+    &__text{
+      padding: 20px 0;
+    }
+  }
+}
+.contact{
+  background: $red-grad;
+}
+.contact-text{
+  padding: 90px 20px;
+  @media (max-width: $md-screen){
+    padding: 50px 20px;
+  }
+  &__text{
+    padding: 0 15%;
+  }
+}
+.contact-form{
+  margin-bottom: 90px;
+  @media (max-width: $md-screen){
+    margin-bottom: 50px;
+  }
+  &::after{
+    content: "";
+    overflow: hidden;
+  }
+  text-align: right;
+  @media (max-width: $md-screen){
+    text-align: center;
+  }
+  &-group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__text{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0);
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    &::placeholder, &{
+      font-family: Roboto-medium;
+      font-size: $body-fs;
+      color: #fff;
+    }
+
+  }
+  &__half{
+    width:45%;
+    margin-bottom: 80px;
+    @media (max-width: $md-screen) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    height: 50px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    &::placeholder, &{
+      font-family: Roboto-medium;
+      font-size: $body-fs;
+      color: #fff;
+    }
+  }
+  &__btn{
+    padding: 15px 30px;
+    border:0;
+  }
+}

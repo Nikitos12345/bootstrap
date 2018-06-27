@@ -1,0 +1,17 @@
+.btn-red{
+  padding:$btn-padd;
+  border-radius:$btn-rad;
+  border:0;
+  font-size: $body-fs;
+  font-family: Roboto-medium;
+  text-transform: uppercase;
+  background: $red-grad;
+  color: #fff;
+  @include margin-y(30px);
+}
+.btn-dark{
+  padding:15px 45px;
+  background-color: $other-back;
+  font-size: $body-fs;
+  color: #fff;
+}

@@ -1,0 +1,42 @@
+header{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  @media (max-width: $lg-screen){
+    height:150px;
+  }
+  .logo{
+    img{
+      width: auto;
+    }
+    @media (max-width: $lg-screen){
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
+  #topmenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li{
+      display: inline-block;
+      text-transform: uppercase;
+      a{
+        @media (max-width: $xl-screen) {
+          font-size: 0.8rem;
+          padding: 0.5rem 1rem;
+        }
+        border: 1px solid #fff;
+        border-radius:10px;
+        display: inline-block;
+        padding: 0.5rem 1.2rem;
+        }
+      &:hover, &.active{
+        a{
+          background: $blue-grad;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

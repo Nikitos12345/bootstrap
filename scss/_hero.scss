@@ -1,0 +1,41 @@
+.hero {
+  background: $blue-grad;
+  @include block-center;
+  @extend %block-height;
+  h1 {
+    color: #fff;
+  }
+}
+  .service{
+    padding-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    .service-item{
+      width:100px;
+      height:100px;
+      background: $blue-grad;
+      border-radius: 50%;
+      @include block-center;
+      margin: 20px auto;
+      i{
+        color: #fff;
+        font-size: 3rem;
+      }
+      @media (max-width:$md-screen) {
+        width:80px;
+        height:80px;
+        i{
+          font-size: 2.5rem;
+        }
+      }
+    }
+    h4{
+      font-size:1rem;
+      font-weight:600;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      @media (max-width: $md-screen) {
+        margin-bottom: 20px;
+      }
+    }
+  }
