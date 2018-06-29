@@ -5,7 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scss/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/scss/fontawesome.css">
+    <link rel="stylesheet" href="css/scss.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,10 +20,10 @@
                     <nav>
                         <ul id="topmenu">
                             <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,7 +37,7 @@
                 <button class="btn-red">lorem</button>
             </div>
         </div>
-       <div class="service">
+       <div id="service" class="service">
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-md-3">
@@ -89,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="portfolio-back">
             <div class="container">
                 <div class="portfolio-text">
@@ -98,52 +100,52 @@
                 </div>
                 <div class="porfolio-link">
                     <ul>
-                        <li class="active"><a href="#">lorem</a></li>
-                        <li><a href="#">lorem</a></li>
-                        <li><a href="#">lorem</a></li>
-                        <li><a href="#">lorem</a></li>
+                        <li class="active" data-filter="*"><a href="#">All</a></li>
+                        <li><a href="#" data-filter=".web">Web</a></li>
+                        <li><a href="#" data-filter=".photo">Photography</a></li>
+                        <li><a href="#" data-filter=".design">Graphic design</a></li>
                     </ul>
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-lg-4 portfolio-block">
+                    <div class="col-sm-6 col-lg-4 portfolio-block web">
                         <div class="prevue"></div>
                         <div class="text-prevue">
-                            <h4>Lorem ipsum.</h4>
+                            <h4>Web design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 portfolio-block photo">
+                        <div class="prevue"></div>
+                        <div class="text-prevue">
+                            <h4>Photography</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
+                        </div>
+                    </div>
+                <div class="col-sm-6 col-lg-4 portfolio-block design">
+                        <div class="prevue"></div>
+                        <div class="text-prevue">
+                            <h4>Programming</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 portfolio-block">
                         <div class="prevue"></div>
                         <div class="text-prevue">
-                            <h4>Lorem ipsum.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
-                        </div>
-                    </div>
-                <div class="col-sm-6 col-lg-4 portfolio-block">
-                        <div class="prevue"></div>
-                        <div class="text-prevue">
-                            <h4>Lorem ipsum.</h4>
+                            <h4>Web design</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 portfolio-block">
                         <div class="prevue"></div>
                         <div class="text-prevue">
-                            <h4>Lorem ipsum.</h4>
+                            <h4>Photography</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4 portfolio-block">
                         <div class="prevue"></div>
                         <div class="text-prevue">
-                            <h4>Lorem ipsum.</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 portfolio-block">
-                        <div class="prevue"></div>
-                        <div class="text-prevue">
-                            <h4>Lorem ipsum.</h4>
+                            <h4>Programming</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, quibusdam.</p>
                         </div>
                     </div>
@@ -271,7 +273,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="container about-container">
             <div class="row">
                 <div class="col-md-6">
@@ -336,7 +338,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
+        <div id="contact" class="contact">
             <div class="container">
                 <div class="contact-text">
                     <h2 class="contact-text__header color-white">Lorem ipsum dolor.</h2>
@@ -375,5 +377,7 @@
     </div>
 </footer>
 <sript src="js/bootstrap.min.js"></sript>
+<sript src="js/isotope.min.js"></sript>
+<sript src="js/script.js"></sript>
 </body>
 </html>

@@ -2,6 +2,9 @@
   background: $blue-grad;
   .portfolio-text {
     @include  padding-y(80px);
+    @media (max-width: $md-screen){
+      @include  padding-y(40px);
+    }
     h2,p{
       color: #fff;
     }
@@ -17,11 +20,13 @@
     ul,li{
       display: inline-block
     }
+
     li{
       text-transform: uppercase;
       @include margin-x(40px);
       @media (max-width: $md-screen){
-        @include margin-x(10px);
+        @include margin-y(10px);
+
       }
       a{
         @media (max-width: $sm-screen) {
