@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/scss/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/scss/fontawesome.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/scss.min.css">
     <title>Document</title>
 </head>
@@ -159,22 +159,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-6">
-                        <p class="icon"><img src="img/icon-porfel.png" alt=""></i></p>
+                        <p class="icon"><img src="img/Icon-porfel.png" alt=""></i></p>
                         <p class="numb">2000</p>
                         <p class="text-stats">Lorem ipsum.</p>
                     </div>
                     <div class="col-md-3 col-6">
-                        <p class="icon"><img src="img/icon-mouse.png" alt=""></p>
+                        <p class="icon"><img src="img/Icon-mouse.png" alt=""></p>
                         <p class="numb">9 000 000</p>
                         <p class="text-stats">Lorem ipsum.</p>
                     </div>
                     <div class="col-md-3 col-6">
-                        <p class="icon"><img src="img/icon-mail.png" alt=""></p>
+                        <p class="icon"><img src="img/Icon-mail.png" alt=""></p>
                         <p class="numb">1200</p>
                         <p class="text-stats">Lorem ipsum.</p>
                     </div>
                     <div class="col-md-3 col-6">
-                        <p class="icon"><img src="img/icon-massage.png" alt=""></p>
+                        <p class="icon"><img src="img/Icon-massage.png" alt=""></p>
                         <p class="numb">2000</p>
                         <p class="text-stats">Lorem ipsum.</p>
                     </div>
