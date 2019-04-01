@@ -61,10 +61,6 @@
     margin: 10px 0;
     text-transform: uppercase;
   }
-  &__span{
-    font-family: Roboto-medium;
-    font-size: $body-fs;
-  }
 }
 .add-block2{
   width: 41.6%;
@@ -89,13 +85,19 @@
   @include padding-x(20px, 0);
   width: 58.3%;
   @media (max-width: $sm-screen) {
+    padding: 0;
     width: 50%;
   }
   text-align: left;
   float: right;
-  &__text{
+  & p:first-child{
+    font-family: Roboto-medium;
+    font-size: $body-fs;
+  }
+  & p:not(:first-child){
     font-size: $sm-fs;
     margin: 20px 0;
+    color: #ffffff;
   }
 }
 .reviews {
@@ -120,11 +122,14 @@
       font-size: $body-fs*1.36;
       padding: 10px 0;
     }
-    &__span{
-      font-size: $sm-fs;
-    }
     &__text{
-      padding: 20px 0;
+      & p:first-child{
+        font-size: $sm-fs;
+      }
+      & p:not(:first-child){
+        padding: 20px 0;
+        color: #fff;
+      }
     }
   }
 }

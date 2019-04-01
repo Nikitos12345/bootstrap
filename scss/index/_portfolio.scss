@@ -87,6 +87,7 @@
   }
 }
 .stats{
+  text-align: center;
   background-color: $other-back;
   @include padding-y(80px, 40px);
   [class^=col]{
@@ -97,7 +98,7 @@
       height: 64px;
     }
   }
-  .numb{
+  .numb-stat p:first-child{
     @include margin-y(20px);
     color: #ffffff;
     font-size: $body-fs*2.7;
@@ -105,7 +106,7 @@
       font-size: $body-fs*2;
     }
   }
-  .text-stats{
+  .numb-stat p:not(:first-child){
     color:#10cab7;
     text-transform: uppercase;
     @media (max-width: $md-screen){
